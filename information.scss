@@ -68,6 +68,39 @@ h3{
     }
 }
 
+// Les cards-items
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+    height: auto;
+    margin: 20px auto 50px auto;
+    text-align: center;
+
+    .item{
+        width: 400px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2{
+        text-align: center;
+        font-size: 2vw;
+    }
+    p{
+        width: 100%;
+    }
+}
+
+i{
+    text-align: center;
+    display: block;
+    height: 50%;
+    font-size: 5vw;
+    width: 100%;
+}
+
 // Responsive
 
 @media screen and (max-width : 1080px) {
@@ -75,5 +108,32 @@ h3{
         margin-top: 200px;
         text-align: center;
         font-size: 50px;
+    }
+
+    h3{
+        width: 90vw;
+        text-align: center;
+        margin: 20px auto 50px auto;
+        font-size: 10vw;
+        &:hover{
+            background-color: $gris;
+            color: whitesmoke;
+        }
+    }
+
+    i{
+        font-size: 20vw;
+    }
+
+    .items{
+
+    h2{
+        font-size: 7vw;
+    }
+}
+
+    .item{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
