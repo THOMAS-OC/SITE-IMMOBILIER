@@ -1,7 +1,7 @@
 // header
 $bleu : #bce0ff;
 
-$jaune : #fbd64a;
+$jaune : #ffeba2;
 
 $gris : #222222;
 
@@ -67,6 +67,7 @@ header{
 
     &:hover i{
         opacity: 0;
+        display: none;
     }
 
     h1::after{
@@ -79,3 +80,10 @@ header{
     }
 }
 
+@media screen and (max-width : 1080px) {
+    header{
+        i{
+            font-size: 7.5vw;
+        }
+    }
+}

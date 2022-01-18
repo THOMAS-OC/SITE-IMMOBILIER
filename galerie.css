@@ -72,6 +72,7 @@ header:hover {
 
 header:hover i {
   opacity: 0;
+  display: none;
 }
 
 header h1::after {
@@ -81,6 +82,12 @@ header h1::after {
   height: 1px;
   background-color: #222222;
   margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+  header i {
+    font-size: 7.5vw;
+  }
 }
 
 * {

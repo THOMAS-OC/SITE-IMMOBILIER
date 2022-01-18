@@ -1,7 +1,7 @@
 // $bleu : #69b0f0;
 $bleu : #bce0ff;
 
-$jaune : #fbd64a;
+$jaune : #ffeba2;
 
 $gris : #222222;
 
@@ -134,6 +134,7 @@ main{
 
     h2{
         font-size: 2.3vw;
+        color: lighten($gris, 50%);
     }
 
     p{
@@ -266,6 +267,8 @@ i:hover{
 
     // Responsive du bloc slide (images)
     .pictures{
+        height: 350px;
+        background-position: center;
         .fleche{
             font-size: 12vw;
             top: 50%;
@@ -277,6 +280,57 @@ i:hover{
 
         .fleche:nth-child(2){
             right: 3%;
+        }
+    }
+
+    // Responsive du bloc OFFRE (gris)
+        // Responsive du bloc agence (bleu)
+        .offres{
+            height: auto;
+            h2{
+                font-size: 10vw;
+                color: lighten($gris, 40%);
+                font-weight: 700;
+            }
+
+            h3{
+                font-size: 5vw;
+                color: white;
+            }
+            p{
+                display: none;
+            }
+            .reseaux{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                background-image: none;
+                height: 70%;
+                width: 100%;
+                position: static;
+                animation: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                div{
+                    border: none;
+                    font-size: 14vw;
+                }
+            }
+        }
+
+    // Responsive du bloc contact (jaune)
+
+    .email{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 10vw;
+        i{
+            margin-top: 30px;
+            font-size: 16vw;
+            margin-bottom: 20px;
         }
     }
 }
