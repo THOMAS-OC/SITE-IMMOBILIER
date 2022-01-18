@@ -7,7 +7,7 @@ const arrowLeft = document.querySelector(".fleche:nth-child(1)")
 
 const arrowRight = document.querySelector(".fleche:nth-child(2)")
 
-const pictureSlide = document.querySelector("div:nth-child(2)")
+const pictureSlide = document.querySelector(".pictures")
 
 console.log(arrowLeft, arrowRight, pictureSlide);
 
