@@ -98,11 +98,11 @@ p {
 }
 
 form {
-  height: 60vh;
+  height: auto;
   width: 60vh;
   padding: 20px;
   background-color: whitesmoke;
-  margin: 200px auto 0 auto;
+  margin: 200px auto 200px auto;
   -webkit-box-shadow: 0px 0px 15px #222222;
           box-shadow: 0px 0px 15px #222222;
   border-radius: 10px;
@@ -144,5 +144,19 @@ form textarea {
 
 .picto i {
   font-size: 4vw;
+}
+
+@media screen and (max-width: 1080px) {
+  form {
+    width: 90vw;
+  }
+  .picto {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .picto i {
+    font-size: 10vw;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
