@@ -6,6 +6,19 @@ $gris : #222222;
 
 @import '_header.scss';
 
+%button {
+    margin-top: 30px;
+    transition-duration: 0.5s;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 2vw;
+    &:hover{
+        background-color: lighten($bleu, 10%);
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -23,5 +36,45 @@ body{
 a {
     color: black;
     text-decoration: none;
+}
 
+// Texte brut
+
+header + h1{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+
+hr{
+    width: 70vw;
+    margin: 20px auto 50px auto;
+}
+
+p{
+    width: 70vw;
+    margin: 20px auto 50px auto;
+}
+
+// Le bouton
+
+h3{
+    @extend %button;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    &:hover{
+        background-color: $gris;
+        color: whitesmoke;
+    }
+}
+
+// Responsive
+
+@media screen and (max-width : 1080px) {
+    header + h1{
+        margin-top: 200px;
+        text-align: center;
+        font-size: 50px;
+    }
 }
