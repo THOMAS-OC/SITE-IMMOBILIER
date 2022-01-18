@@ -14,12 +14,12 @@ console.log(arrowLeft, arrowRight, pictureSlide);
 arrowRight.addEventListener("click", ()=>{
     if (cursor + 1 == 3) {
         cursor = 0
-        pictureSlide.style.backgroundImage = `url(/images/${arrayPictures[cursor]})`;
+        pictureSlide.style.backgroundImage = `url(images/${arrayPictures[cursor]})`;
 
     }
     else{
         cursor = cursor + 1
-        pictureSlide.style.backgroundImage = `url(/images/${arrayPictures[cursor]})`;
+        pictureSlide.style.backgroundImage = `url(images/${arrayPictures[cursor]})`;
 
     }
     console.log(cursor);
@@ -28,12 +28,12 @@ arrowRight.addEventListener("click", ()=>{
 arrowLeft.addEventListener("click", ()=>{
     if (cursor - 1 == -1) {
         cursor = 2
-        pictureSlide.style.backgroundImage = `url(/images/${arrayPictures[cursor]})`;
+        pictureSlide.style.backgroundImage = `url(images/${arrayPictures[cursor]})`;
 
     }
     else{
         cursor = cursor - 1
-        pictureSlide.style.backgroundImage = `url(/images/${arrayPictures[cursor]})`;
+        pictureSlide.style.backgroundImage = `url(images/${arrayPictures[cursor]})`;
 
     }
     console.log(cursor);
