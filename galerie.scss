@@ -1,0 +1,27 @@
+$bleu : #69b0f0;
+
+$jaune : #fbd64a;
+
+$gris : #222222;
+
+@import '_header.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    // background-color: $gris;
+    overflow-x: none;
+    overflow:none;
+    user-select: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}

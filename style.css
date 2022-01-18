@@ -87,6 +87,21 @@ a {
   text-decoration: none;
 }
 
+.agence h3, .offres h3 {
+  margin-top: 30px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-size: 2vw;
+}
+
+.agence h3:hover, .offres h3:hover {
+  background-color: #97c8f5;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,20 +147,6 @@ main {
   color: black;
 }
 
-.agence h3 {
-  margin-top: 30px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  display: inline-block;
-  padding: 10px 20px;
-  border: 1.5px solid black;
-  border-radius: 5px;
-}
-
-.agence h3:hover {
-  background-color: #97c8f5;
-}
-
 .pictures {
   background-image: url("/images/img1Slide.jpg");
   background-size: cover;
@@ -181,6 +182,8 @@ main {
 }
 
 .offres {
+  color: white;
+  text-align: center;
   background-color: #222222;
   height: 50%;
   width: 70%;
@@ -197,6 +200,20 @@ main {
           animation-fill-mode: forwards;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  padding: 6%;
+}
+
+.offres h2 {
+  font-size: 2.3vw;
+}
+
+.offres p {
+  font-size: 1.5vw;
+}
+
+.offres h3:hover {
+  background-color: #090909;
+  color: whitesmoke;
 }
 
 .offres .reseaux {

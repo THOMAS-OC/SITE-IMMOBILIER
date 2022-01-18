@@ -26,6 +26,19 @@ a {
 
 }
 
+%button {
+    margin-top: 30px;
+    transition-duration: 0.5s;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 2vw;
+    &:hover{
+        background-color: lighten($bleu, 10%);
+    }
+}
+
 // Contenu principal
 
 main{
@@ -67,15 +80,7 @@ main{
     }
 
     h3{
-        margin-top: 30px;
-        transition-duration: 0.5s;
-        display: inline-block;
-        padding: 10px 20px;
-        border: 1.5px solid black;
-        border-radius: 5px;
-        &:hover{
-            background-color: lighten($bleu, 10%);
-        }
+        @extend %button
     }
 }
 
@@ -113,6 +118,8 @@ main{
 
 
 .offres{
+    color: white;
+    text-align: center;
     background-color: $gris;
     height: 50%;
     width: 70%;
@@ -123,6 +130,24 @@ main{
     animation-delay: 2s;
     animation-fill-mode: forwards;
     transform: translateX(-100%);
+    padding: 6%;
+
+    h2{
+        font-size: 2.3vw;
+    }
+
+    p{
+        font-size: 1.5vw;
+    }
+
+    h3{
+        @extend %button;
+        &:hover{
+            background-color: darken($gris, 10%);
+            color: whitesmoke;
+        }
+    }
+
     .reseaux{
         background-image: none;
         height: 70%;
