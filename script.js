@@ -41,17 +41,26 @@ arrowLeft.addEventListener("click", ()=>{
 
 // click sur le menu
 
-// const menu = document.querySelector("header")
-// menuActive = false
+const menu = document.querySelector("header")
+menuActive = false
 
-// menu.addEventListener("click", ()=>{
-//     if(!menuActive){
-//         menu.style.height = "400px"
-//         menuActive = true
-//     }
+menu.addEventListener("click", ()=>{
+    if(!menuActive){
+        menu.style.height = "400px"
+        menuActive = true
+    }
 
-//     else{
-//         menu.style.height = "120px"
-//         menuActive = false
-//     }
-// })
+    else{
+        menu.style.height = "120px"
+        menuActive = false
+    }
+})
+
+menu.addEventListener("mouseover", ()=>{
+    menu.style.height = "400px"
+})
+
+
+menu.addEventListener("mouseleave", ()=>{
+    menu.style.height = "120px"
+})
