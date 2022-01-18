@@ -229,3 +229,15 @@ i:hover{
         transform: translateX(0%);
     }
 }
+
+//Responsive
+
+@media screen and (max-width : 1080px) {
+    main{
+        height: 100vh;
+    }
+    .email, .offres, .pictures, .agence{
+        width: 100%;
+        height: 25%;
+    }
+}

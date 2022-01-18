@@ -38,3 +38,20 @@ arrowLeft.addEventListener("click", ()=>{
     }
     console.log(cursor);
 })
+
+// click sur le menu
+
+// const menu = document.querySelector("header")
+// menuActive = false
+
+// menu.addEventListener("click", ()=>{
+//     if(!menuActive){
+//         menu.style.height = "400px"
+//         menuActive = true
+//     }
+
+//     else{
+//         menu.style.height = "120px"
+//         menuActive = false
+//     }
+// })
