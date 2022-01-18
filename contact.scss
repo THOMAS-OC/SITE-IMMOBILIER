@@ -25,3 +25,56 @@ a {
     text-decoration: none;
 
 }
+
+// Haut de page
+header + h1{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 50px;
+}
+p{
+    text-align: center;
+}
+
+// Mise en page du formulaire
+
+form{
+    height: 60vh;
+    width: 60vh;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin: 200px auto 0 auto;
+    box-shadow: 0px 0px 15px $gris;
+    border-radius: 10px;
+    h1{
+        text-align: center;
+    }
+    label{
+        display: block;
+    }
+    input{
+        border: 1.5px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+
+.picto{
+    width: 50vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 0 auto;
+
+    i{
+        font-size: 4vw;
+    }
+}
+
+// Responsive
