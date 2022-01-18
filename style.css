@@ -148,7 +148,7 @@ main {
 }
 
 .pictures {
-  background-image: url("/images/img1Slide.jpg");
+  background-image: url("images/img1Slide.jpg");
   background-size: cover;
   height: 60%;
   width: 70%;
