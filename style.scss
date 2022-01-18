@@ -7,15 +7,21 @@ $gris : #222222;
 *{
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
 
 body{
     background-color: $gris;
 }
 
-header{
+// Page header
 
+header{
+    padding: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     background-color: rgb(230, 230, 230);
     overflow: hidden;
     width: 100%;
@@ -36,6 +42,18 @@ header{
     li{
         margin-top: 15px;
         cursor: pointer;
+        &::after{
+            content: "";
+            display: block;
+            width: 0%;
+            height: 1px;
+            background-color: $gris;
+            margin: 0 auto 0 auto;
+            transition-duration: 0.5s;
+        }
+        &:hover::after{
+            width: 5%;
+        }
     }
 
     &:hover{
@@ -50,4 +68,38 @@ header{
         background-color: $gris;
         margin: 0 auto 0 auto;
     }
+}
+
+// Contenu principal
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+div:nth-child(1){
+    background-color: $bleu;
+    height: 30vw;
+    width: 30vw;
+    color: whitesmoke;
+}
+
+div:nth-child(2){
+    background-color: $jaune;
+    height: 30vw;
+    width: 69vw;
+}
+
+div:nth-child(3){
+    background-color: $gris;
+    height: 30vw;
+    width: 69vw;
+}
+
+div:nth-child(4){
+    background-color: $jaune;
+    height: 30vw;
+    width: 30vw;
 }
