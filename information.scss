@@ -9,7 +9,6 @@ $gris : #222222;
 %button {
     margin-top: 30px;
     transition-duration: 0.5s;
-    display: inline-block;
     padding: 10px 20px;
     border: 1.5px solid black;
     border-radius: 5px;
@@ -60,9 +59,9 @@ p{
 
 h3{
     @extend %button;
-    margin-left: auto;
-    margin-right: auto;
+    width: 30vw;
     text-align: center;
+    margin: 20px auto 50px auto;
     &:hover{
         background-color: $gris;
         color: whitesmoke;
