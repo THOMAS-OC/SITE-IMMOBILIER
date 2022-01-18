@@ -104,3 +104,8 @@ menu.addEventListener("mouseover", ()=>{
 menu.addEventListener("mouseleave", ()=>{
     menu.style.height = "120px"
 })
+
+document.addEventListener("scroll", () => {
+    menu.style.height = "120px"
+    menuActive = false
+})
