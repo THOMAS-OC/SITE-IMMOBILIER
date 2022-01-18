@@ -4,6 +4,8 @@ $jaune : #fbd64a;
 
 $gris : #222222;
 
+@import '_header.scss';
+
 *{
     padding: 0;
     margin: 0;
@@ -15,68 +17,13 @@ body{
     overflow-x: none;
     overflow:none;
     user-select: none;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+a {
+    color: black;
+    text-decoration: none;
 
-// Page header
-
-header{
-    h1{
-        font-size: 50px;
-        cursor: pointer;
-    }
-    padding: 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: rgb(230, 230, 230);
-    overflow: hidden;
-    width: 100%;
-    height: 120px;
-    color: $gris;
-    transition-duration: 0.4s;
-    transition-delay: 0.2s;
-    box-shadow: 0px 5px 10px white;
-    nav{
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    ul{
-        list-style-type: none;
-    }
-
-    li{
-        font-size: 30px;
-        margin-top: 30px;
-        cursor: pointer;
-        &::after{
-            content: "";
-            display: block;
-            width: 0%;
-            height: 1px;
-            background-color: $gris;
-            margin: 0 auto 0 auto;
-            transition-duration: 0.5s;
-        }
-        &:hover::after{
-            width: 5%;
-        }
-    }
-
-    &:hover{
-        height: 400px;
-    }
-
-    h1::after{
-        content: "";
-        display: block;
-        width: 10%;
-        height: 1px;
-        background-color: $gris;
-        margin: 0 auto 0 auto;
-    }
 }
 
 // Contenu principal
@@ -95,6 +42,7 @@ main{
 }
 
 .agence{
+    padding-left: 2%;
     background-color: $bleu;
     height: 60%;
     width: 30%;
@@ -104,16 +52,34 @@ main{
     animation-delay: 1s;
     transform: translateX(-100%);
     animation-fill-mode: forwards;
+
+    h2{
+        margin-top: 30px;
+        font-size: 3vw;
+        color: black;
+        font-weight: 700;
+    }
+
+    p{
+        margin-top: 30px;
+        font-size: 1.2vw;
+        color: black;
+    }
+
+    h3{
+        margin-top: 30px;
+        transition-duration: 0.5s;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1.5px solid black;
+        border-radius: 5px;
+        &:hover{
+            background-color: lighten($bleu, 10%);
+        }
+    }
 }
 
-@keyframes topleft {
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
+
 
 
 .pictures{
@@ -145,43 +111,50 @@ main{
     }
 }
 
-@keyframes topright {
-    from{
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
 
 .offres{
     background-color: $gris;
     height: 50%;
     width: 70%;
     position: relative;
+    transition-duration: 1s;
+    animation-name: topleft;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
     .reseaux{
         background-image: none;
-        height: 100%;
+        height: 70%;
         width: 10%;
-        left: 5%;
+        left: 1%;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
         position: absolute;
         animation: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+
         div{
-            width: 50%;
-            height: 25%;
-            border: 2px solid white;
+            width: 40%;
+            height: 20%;
             border-radius: 50%;
+            border: 2px solid whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2vw;
         }
     }
 }
 
 .email{
+
+    font-style: italic;
+    font-weight: lighter;
     background-color: $jaune;
     height: 50%;
     width: 30%;
@@ -189,6 +162,13 @@ main{
     justify-content: space-around;
     align-items: center;
     font-size: 3vw;
+
+    transition-duration: 1s;
+    animation-name: topright;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
     i{
 
         font-size: 5vw;
@@ -197,7 +177,30 @@ main{
     }
 
 }
-
+i{
+    cursor: pointer;
+}
 i:hover{
     filter: drop-shadow(0 0 0.75rem white);
+}
+
+
+@keyframes topleft {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+
+@keyframes topright {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
