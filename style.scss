@@ -1,4 +1,5 @@
-$bleu : #69b0f0;
+// $bleu : #69b0f0;
+$bleu : #bce0ff;
 
 $jaune : #fbd64a;
 
@@ -101,10 +102,9 @@ main{
     .fleche{
         position: absolute;
         bottom: 5%;
-        font-size: max(4vw);
+        font-size: 4vw;
         cursor: pointer;
         color: white;
-        background-color: $gris;
         border-radius: 60%;
     }
     .fleche:nth-child(1){
@@ -240,4 +240,44 @@ i:hover{
         width: 100%;
         height: 25%;
     }
+
+
+    // Responsive du bloc agence (bleu)
+    .agence{
+        height: auto;
+        h2{
+            margin-top: 30px;
+            font-size: 10vw;
+            color: black;
+            font-weight: 700;
+        }
+    
+        p{
+            margin-top: 30px;
+            font-size: 5vw;
+            color: black;
+        }
+
+        h3{
+            font-size: 5vw;
+            margin-bottom: 20px;
+        }
+    }
+
+    // Responsive du bloc slide (images)
+    .pictures{
+        .fleche{
+            font-size: 12vw;
+            top: 50%;
+            background-color: none;
+        }
+        .fleche:nth-child(1){
+            left: 3%;
+        }
+
+        .fleche:nth-child(2){
+            right: 3%;
+        }
+    }
 }
+

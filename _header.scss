@@ -1,6 +1,22 @@
 // header
+$bleu : #bce0ff;
+
+$jaune : #fbd64a;
+
+$gris : #222222;
 
 header{
+    i{
+        position: absolute;
+        left: 50%;
+        font-size: 2vw;
+        bottom: 0%;
+        transform: translateX(-50%);
+        color: lighten($gris, 10%);
+        transition-duration: 0.7s;
+        transition-delay: 0.2s;
+    }
+
     h1{
         font-size: 50px;
         cursor: pointer;
@@ -47,6 +63,10 @@ header{
 
     &:hover{
         height: 400px;
+    }
+
+    &:hover i{
+        opacity: 0;
     }
 
     h1::after{
