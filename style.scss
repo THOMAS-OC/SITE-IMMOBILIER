@@ -1,0 +1,53 @@
+$bleu : #69b0f0;
+
+$jaune : #fbd64a;
+
+$gris : #222222;
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: $gris;
+}
+
+header{
+
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    color: $gris;
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+    border-bottom: 2px solid black;
+    nav{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    li{
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    &:hover{
+        height: 220px;
+    }
+
+    h1::after{
+        content: "";
+        display: block;
+        width: 10%;
+        height: 1px;
+        background-color: $gris;
+        margin: 0 auto 0 auto;
+    }
+}
