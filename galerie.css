@@ -190,5 +190,9 @@ main .info p:nth-child(2) {
     width: 100vw;
     padding: 20px;
   }
+  main div {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
 }
 /*# sourceMappingURL=galerie.css.map */
