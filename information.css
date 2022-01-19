@@ -112,8 +112,6 @@ h3:hover {
 }
 
 body {
-  overflow-x: none;
-  overflow: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -184,7 +182,7 @@ h3:hover {
   width: 100%;
 }
 
-i {
+.items i {
   text-align: center;
   display: block;
   height: 50%;
@@ -208,11 +206,11 @@ i {
     background-color: #222222;
     color: whitesmoke;
   }
-  i {
-    font-size: 20vw;
-  }
   .items h2 {
     font-size: 7vw;
+  }
+  .items i {
+    font-size: 20vw;
   }
   .item {
     margin-left: auto;

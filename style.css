@@ -98,8 +98,6 @@ header h1::after {
 }
 
 body {
-  overflow-x: none;
-  overflow: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

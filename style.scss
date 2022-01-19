@@ -15,8 +15,7 @@ $gris : #222222;
 
 body{
     // background-color: $gris;
-    overflow-x: none;
-    overflow:none;
+
     user-select: none;
     font-family: 'Cormorant Garamond', serif;
 }
@@ -24,7 +23,6 @@ body{
 a {
     color: black;
     text-decoration: none;
-
 }
 
 %button {
